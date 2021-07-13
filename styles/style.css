@@ -34,7 +34,7 @@
     width: 560px;
 }
 .header-detail h1{
-    font-size: 45px;
+    font-size: 64px;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
@@ -91,16 +91,36 @@ main{
         player css end
 ------------------------- */
 
-
  /*--------------------- 
         footer  start
 ------------------------- */
 
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
 
-
-
-
-
+.footer-logo img{
+    width:450px
+}
+.footer-icon{
+    padding: 10px 0;
+}
+.footer-icon span i{
+    padding: 10px;
+    background-color: #E7E7E8;
+    font-size: 28px;
+    color:#666;
+    border-radius: 26px;
+    margin-right: 14px;
+}
+.footer-copyright p{
+    color: #000000;
+    font-size: 24px;
+}
 
 
 
