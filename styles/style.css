@@ -13,21 +13,18 @@
  {
     font-family: 'Poppins', sans-serif;
  }
+.container{
+    width: 100%;
+ } 
 
- .container
- {
-    background-color: #2D25A0;
-    width: 1024px;
- }
 
- header {
-    display: flex;
-    justify-content: center;
-}
 
  /*--------------------- 
         header css start
 ------------------------- */
+.header-bg{
+    background-color: #2D25A0;
+}
 .header-section {
     display: flex;
     padding: 50px;
@@ -62,9 +59,42 @@
 ------------------------- */
 
 
+ /*--------------------- 
+        player css start
+------------------------- */
+main{
+    background: #fff;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 60px 170px;
+}
+.player{
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+.card-detail {
+    box-shadow: 1px 1px 10px -1px #aaaaaa;
+    padding: 15px;
+}
+.card-detail .card-img img{
+    width: 100%;
+}
+.card-info p{
+    color: #666;
+}
+ /*--------------------- 
+        player css end
+------------------------- */
 
 
-
+ /*--------------------- 
+        footer  start
+------------------------- */
 
 
 
