@@ -127,6 +127,48 @@ main{
     color: #2D25A0;
     font-size: 40px;
 }
+/*-------------------------- 
+        about-css-start
+----------------------------------*/
+.about-detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+    padding: 20px 0;
+}
+.about-detail .about-image img{
+    width: 500px;
+    border-radius: 10px;
+}
+.about-info{
+    margin-left: 50px;
+    padding: 40px;
+}
+.about-info h1{
+    font-size: 40px;
+    color:#2D25A0;
+}
+.about-info p{
+    color: #666;
+    line-height: 1.7rem;
+}
+.country-title-about{
+    text-align: center;
+    font-size: 45px;
+    color: #1b1b20;
+    border-bottom: 2px solid #000;
+    width: 180px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 
 
 
@@ -204,6 +246,13 @@ main{
         width: 100%;
        
     }
+    .about-detail{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-detail .about-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
     .country-title {
         margin-top: 50px;
     }
@@ -264,6 +313,13 @@ main{
     }
     .country-title {
         margin-top: 50px;
+    }
+    .about-detail{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-detail .about-image img {
+        width: 100%;
+        border-radius: 10px;
     }
     .footer-logo img {
         width: 80%;
