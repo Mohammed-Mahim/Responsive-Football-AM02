@@ -26,10 +26,11 @@
     background-color: #2D25A0;
 }
 .header-section{
-    display: flex;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    padding: 70px 140px;
 }
 .header-thumbnail img{
     width: 560px;
@@ -45,14 +46,23 @@
     padding: 10px 24px;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 700;
     border-radius: 4px;
     transition: background-color 1s, color 2s;
 }
 .header-detail a:hover{
     background-color: #fff;
     color: #000;
+}
 
-    
+.fas{
+    color: #fff;
+    margin-left: 8px;
+    font-size: 16px;
+    transition: color 2s;
+}
+.header-detail a:hover .fas{
+    color: #000;
 }
 
  /*--------------------- 
@@ -76,7 +86,6 @@ main{
     background: #fff;
     border-radius: 5px;
     margin: 10px;
-    
 }
 .card-detail {
     box-shadow: 1px 1px 10px -1px #aaaaaa;
@@ -128,7 +137,7 @@ main{
 
 
 /* ---------------------------------------
-                Responsive
+                Media Query
 -----------------------------------------*/
 
 /*---------------------------
@@ -138,30 +147,29 @@ main{
  @media only screen and (max-width:688px){
      .container{
         width: 100%;
-     }
-     .header-detail h1 {
-        font-size: 45px;
+     } 
+    
+     .header-section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 4% 0;
+        margin-left: 5%;
+        margin-right: 5%;
+       
     }
-    .header-section {
-        display: flex;
-        flex-direction: column;
-    }
-    .header-detail{
-        margin-bottom: 50px;
-    }
-    .header-thumbnail img {
+    .header-section .header-thumbnail img {
+        margin-top: 60px;
         width: 100%;
     }
     .players{
         grid-template-columns: repeat(1, 1fr);
-        padding: 14px 0;
+        padding: 14px 0px;
         grid-column-gap: 20px;
     }
     .footer-logo img {
         width: 300px;
     }
     .footer-icon span i {
-        font-size: 20px;
+        font-size: 18px;
     }
     .footer-copyright p {
         font-size: 20px;
@@ -177,23 +185,27 @@ main{
 
     .container{
         width: 100%;
-    }
-    .header-detail h1 {
-        font-size: 55px;
-    }
-    .header-section {
-        display: flex;
-        flex-direction: column;
+     } 
+    
+     .header-section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+       
     }
     .header-detail{
-        margin-bottom: 50px;
+        padding: 0 40px;
     }
-    .header-thumbnail img {
-        width: 100%;
+    .header-detail h1{
+        font-size: 40px;
+    }
+    .header-section .header-thumbnail img {
+        margin-top: 60px;
+        width: 90%;
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
-        padding: 0;
+        padding: 20px 0px;
+        grid-column-gap: 20px;
     }
 
 }
