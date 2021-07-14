@@ -101,6 +101,35 @@ main{
         player css end
 ------------------------- */
 
+
+/* -------------countries css start --------- */
+.country-title{
+    text-align: center;
+    font-size: 45px;
+    color: #2D25A0;;
+}
+.country{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 70px 180px;
+}
+.country-banner{
+    padding: 60px
+}
+.country-banner .country-img img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.country-img h2{
+    color: #2D25A0;
+    font-size: 40px;
+}
+
+
+
  /*--------------------- 
         footer  start
 ------------------------- */
@@ -165,6 +194,19 @@ main{
         padding: 14px 0px;
         grid-column-gap: 20px;
     }
+    .country{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .country{
+        padding:0;
+    }
+    .country-banner .country-img img{
+        width: 100%;
+       
+    }
+    .country-title {
+        margin-top: 50px;
+    }
     .footer-logo img {
         width: 300px;
     }
@@ -207,6 +249,25 @@ main{
         padding: 20px 0px;
         grid-column-gap: 20px;
     }
+    .country{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .country{
+        padding:0;
+    }
+    .country-banner .country-img img{
+        width: 100%;
+    }
+    .country-banner{
 
+        grid-gap: 20px;
+    }
+    .country-title {
+        margin-top: 50px;
+    }
+    .footer-logo img {
+        width: 80%;
+    }
+    
 }
  
